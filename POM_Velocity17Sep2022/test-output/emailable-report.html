@@ -9,20 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,973</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,307</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.PIMTest</td><td><a href="#m0">verifyEmpSearchEmpId</a></td><td rowspan="1">1675658517275</td><td rowspan="1">10205</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test.LoginTest</td><td><a href="#m1">verifyBuildTitleName</a></td><td rowspan="1">1675658508955</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m2">verifyCurrentUrlOfPage</a></td><td rowspan="1">1675658509207</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m3">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1675658509217</td><td rowspan="1">1649</td></tr><tr class="passedeven"><td><a href="#m4">verifyTitleOfLoginPage</a></td><td rowspan="1">1675658508973</td><td rowspan="1">232</td></tr><tr class="passedodd"><td rowspan="1">test.PIMTest</td><td><a href="#m5">verifyPimPageTitle</a></td><td rowspan="1">1675658515619</td><td rowspan="1">1655</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.PIMTest</td><td><a href="#m0">verifyEmpSearchEmpId</a></td><td rowspan="1">1675821581217</td><td rowspan="1">757</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test.LoginTest</td><td><a href="#m1">verifyBuildTitleName</a></td><td rowspan="1">1675821572418</td><td rowspan="1">24</td></tr><tr class="passedeven"><td><a href="#m2">verifyCurrentUrlOfPage</a></td><td rowspan="1">1675821572941</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m3">verifyLoginWithCorrectCredentials</a></td><td rowspan="1">1675821572951</td><td rowspan="1">1757</td></tr><tr class="passedeven"><td><a href="#m4">verifyTitleOfLoginPage</a></td><td rowspan="1">1675821572450</td><td rowspan="1">489</td></tr><tr class="passedodd"><td rowspan="1">test.PIMTest</td><td><a href="#m5">verifyPimPageTitle</a></td><td rowspan="1">1675821579657</td><td rowspan="1">1559</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">test.PIMTest#verifyEmpSearchEmpId</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+<h2>Test</h2><h3 id="m0">test.PIMTest#verifyEmpSearchEmpId</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [288f51553696a498257ecb5de2a519e3, getElementText {id=3f0e706c-9daf-48f9-8528-57b2e466de6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61823/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (288f51553696a498257ecb5de2a519e3)] -&gt; xpath: //*[@class=&apos;orangehrm-container&apos;]]] -&gt; xpath: //div[text()=&apos;0221&apos;]]
+Session ID: 288f51553696a498257ecb5de2a519e3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 	at mainjava.PIMPage.getEmpIdFromSearchedResults(PIMPage.java:78)
-	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:26)
+	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">test.LoginTest#verifyBuildTitleName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">test.LoginTest#verifyCurrentUrlOfPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">test.LoginTest#verifyLoginWithCorrectCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

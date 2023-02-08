@@ -5,11 +5,11 @@
     <classes>
       <class name="test.PIMTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="logOutUser"/>
           <include name="pageObjects"/>
           <include name="verifyEmpSearchEmpId"/>
           <include name="initBrowser"/>
-          <include name="login"/>
           <include name="logoutUser"/>
         </methods>
       </class> <!-- test.PIMTest -->

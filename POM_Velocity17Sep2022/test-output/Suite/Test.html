@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 06 10:11:48 IST 2023</td>
+<td>Started on:</td><td>Wed Feb 08 07:29:32 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20973 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11307 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,55 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.PIMTest.verifyEmpSearchEmpId()'><b>verifyEmpSearchEmpId</b><br>Test class: test.PIMTest</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [288f51553696a498257ecb5de2a519e3, getElementText {id=3f0e706c-9daf-48f9-8528-57b2e466de6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61823/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (288f51553696a498257ecb5de2a519e3)] -&gt; xpath: //*[@class=&apos;orangehrm-container&apos;]]] -&gt; xpath: //div[text()=&apos;0221&apos;]]
+Session ID: 288f51553696a498257ecb5de2a519e3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 	at mainjava.PIMPage.getEmpIdFromSearchedResults(PIMPage.java:78)
-	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:26)
+	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454841229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace454841229'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354154358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354154358'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [288f51553696a498257ecb5de2a519e3, getElementText {id=3f0e706c-9daf-48f9-8528-57b2e466de6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61823/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (288f51553696a498257ecb5de2a519e3)] -&gt; xpath: //*[@class=&apos;orangehrm-container&apos;]]] -&gt; xpath: //div[text()=&apos;0221&apos;]]
+Session ID: 288f51553696a498257ecb5de2a519e3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 	at mainjava.PIMPage.getEmpIdFromSearchedResults(PIMPage.java:78)
-	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:26)
+	at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,7 +154,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
+<td>0</td>
 <td>test.PIMTest@2f217633</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -134,17 +165,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.LoginTest.verifyLoginWithCorrectCredentials()'><b>verifyLoginWithCorrectCredentials</b><br>Test class: test.LoginTest</td>
+<td title='test.PIMTest.verifyPimPageTitle()'><b>verifyPimPageTitle</b><br>Test class: test.PIMTest</td>
 <td></td>
 <td>1</td>
-<td>test.LoginTest@32ee6fee</td></tr>
+<td>test.PIMTest@2f217633</td></tr>
 <tr>
 <td title='test.LoginTest.verifyBuildTitleName()'><b>verifyBuildTitleName</b><br>Test class: test.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>test.LoginTest@32ee6fee</td></tr>
-<tr>
-<td title='test.LoginTest.verifyTitleOfLoginPage()'><b>verifyTitleOfLoginPage</b><br>Test class: test.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>test.LoginTest@32ee6fee</td></tr>
@@ -154,10 +180,15 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>test.LoginTest@32ee6fee</td></tr>
 <tr>
-<td title='test.PIMTest.verifyPimPageTitle()'><b>verifyPimPageTitle</b><br>Test class: test.PIMTest</td>
+<td title='test.LoginTest.verifyTitleOfLoginPage()'><b>verifyTitleOfLoginPage</b><br>Test class: test.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>test.LoginTest@32ee6fee</td></tr>
+<tr>
+<td title='test.LoginTest.verifyLoginWithCorrectCredentials()'><b>verifyLoginWithCorrectCredentials</b><br>Test class: test.LoginTest</td>
 <td></td>
 <td>1</td>
-<td>test.PIMTest@2f217633</td></tr>
+<td>test.LoginTest@32ee6fee</td></tr>
 </table><p>
 </body>
 </html>

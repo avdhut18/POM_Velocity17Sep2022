@@ -2,7 +2,7 @@
 <testng-results ignored="2" total="8" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-06T10:11:48 IST" name="Suite" finished-at="2023-02-06T10:12:09 IST" duration-ms="20973">
+  <suite started-at="2023-02-08T07:29:32 IST" name="Suite" finished-at="2023-02-08T07:29:43 IST" duration-ms="11307">
     <groups>
       <group name="regression">
         <method signature="LoginTest.verifyBuildTitleName()[pri:-1, instance:test.LoginTest@32ee6fee]" name="verifyBuildTitleName" class="test.LoginTest"/>
@@ -21,34 +21,61 @@
         <method signature="PIMTest.verifyPimPageTitle()[pri:3, instance:test.PIMTest@2f217633]" name="verifyPimPageTitle" class="test.PIMTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-06T10:11:48 IST" name="Test" finished-at="2023-02-06T10:12:09 IST" duration-ms="20973">
+    <test started-at="2023-02-08T07:29:32 IST" name="Test" finished-at="2023-02-08T07:29:43 IST" duration-ms="11307">
       <class name="test.PIMTest">
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-06T10:11:53 IST" name="pageObjects" finished-at="2023-02-06T10:11:53 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-08T07:29:37 IST" name="pageObjects" finished-at="2023-02-08T07:29:37 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method is-config="true" signature="login()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-06T10:11:53 IST" name="login" finished-at="2023-02-06T10:11:55 IST" duration-ms="1829" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-08T07:29:37 IST" name="login" finished-at="2023-02-08T07:29:39 IST" duration-ms="1900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verifyPimPageTitle()[pri:3, instance:test.PIMTest@2f217633]" started-at="2023-02-06T10:11:55 IST" name="verifyPimPageTitle" finished-at="2023-02-06T10:11:57 IST" duration-ms="1655" status="PASS">
+        <test-method signature="verifyPimPageTitle()[pri:3, instance:test.PIMTest@2f217633]" started-at="2023-02-08T07:29:39 IST" name="verifyPimPageTitle" finished-at="2023-02-08T07:29:41 IST" duration-ms="1559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPimPageTitle -->
-        <test-method signature="verifyEmpSearchEmpId()[pri:4, instance:test.PIMTest@2f217633]" started-at="2023-02-06T10:11:57 IST" name="verifyEmpSearchEmpId" finished-at="2023-02-06T10:12:07 IST" duration-ms="10205" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method signature="verifyEmpSearchEmpId()[pri:4, instance:test.PIMTest@2f217633]" started-at="2023-02-08T07:29:41 IST" name="verifyEmpSearchEmpId" finished-at="2023-02-08T07:29:41 IST" duration-ms="757" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Index 0 out of bounds for length 0]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [288f51553696a498257ecb5de2a519e3, getElementText {id=3f0e706c-9daf-48f9-8528-57b2e466de6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61823/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (288f51553696a498257ecb5de2a519e3)] -> xpath: //*[@class='orangehrm-container']]] -> xpath: //div[text()='0221']]
+Session ID: 288f51553696a498257ecb5de2a519e3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-at java.base/java.util.Objects.checkIndex(Objects.java:359)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [288f51553696a498257ecb5de2a519e3, getElementText {id=3f0e706c-9daf-48f9-8528-57b2e466de6a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\avdhu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61823/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (288f51553696a498257ecb5de2a519e3)] -> xpath: //*[@class='orangehrm-container']]] -> xpath: //div[text()='0221']]
+Session ID: 288f51553696a498257ecb5de2a519e3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 at mainjava.PIMPage.getEmpIdFromSearchedResults(PIMPage.java:78)
-at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:26)
+at test.PIMTest.verifyEmpSearchEmpId(PIMTest.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,48 +106,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmpSearchEmpId -->
-        <test-method is-config="true" signature="logoutUser()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-06T10:12:07 IST" name="logoutUser" finished-at="2023-02-06T10:12:09 IST" duration-ms="2397" status="PASS">
+        <test-method is-config="true" signature="logOutUser()[pri:0, instance:test.PIMTest@2f217633]" started-at="2023-02-08T07:29:41 IST" name="logOutUser" finished-at="2023-02-08T07:29:43 IST" duration-ms="1647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutUser -->
+        </test-method> <!-- logOutUser -->
       </class> <!-- test.PIMTest -->
       <class name="test.LoginTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:00 IST" name="initBrowser" finished-at="2023-02-06T10:11:48 IST" duration-ms="48497" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:25 IST" name="initBrowser" finished-at="2023-02-08T07:29:32 IST" duration-ms="7188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:48 IST" name="pageObjects" finished-at="2023-02-06T10:11:48 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:32 IST" name="pageObjects" finished-at="2023-02-08T07:29:32 IST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method signature="verifyBuildTitleName()[pri:-1, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:48 IST" name="verifyBuildTitleName" finished-at="2023-02-06T10:11:48 IST" duration-ms="13" status="PASS">
+        <test-method signature="verifyBuildTitleName()[pri:-1, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:32 IST" name="verifyBuildTitleName" finished-at="2023-02-08T07:29:32 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBuildTitleName -->
-        <test-method signature="verifyTitleOfLoginPage()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:48 IST" name="verifyTitleOfLoginPage" finished-at="2023-02-06T10:11:49 IST" duration-ms="232" status="PASS">
+        <test-method signature="verifyTitleOfLoginPage()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:32 IST" name="verifyTitleOfLoginPage" finished-at="2023-02-08T07:29:32 IST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfLoginPage -->
-        <test-method signature="verifyCurrentUrlOfPage()[pri:1, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:49 IST" name="verifyCurrentUrlOfPage" finished-at="2023-02-06T10:11:49 IST" duration-ms="9" status="PASS">
+        <test-method signature="verifyCurrentUrlOfPage()[pri:1, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:32 IST" name="verifyCurrentUrlOfPage" finished-at="2023-02-08T07:29:32 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCurrentUrlOfPage -->
-        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:49 IST" name="verifyLoginWithCorrectCredentials" finished-at="2023-02-06T10:11:50 IST" duration-ms="1649" status="PASS">
+        <test-method signature="verifyLoginWithCorrectCredentials()[pri:2, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:32 IST" name="verifyLoginWithCorrectCredentials" finished-at="2023-02-08T07:29:34 IST" duration-ms="1757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithCorrectCredentials -->
-        <test-method is-config="true" signature="logoutUser()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:11:50 IST" name="logoutUser" finished-at="2023-02-06T10:11:53 IST" duration-ms="2918" status="PASS">
+        <test-method is-config="true" signature="logOutUser()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:34 IST" name="logOutUser" finished-at="2023-02-08T07:29:37 IST" duration-ms="3045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutUser -->
+        <test-method is-config="true" signature="logoutUser()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-08T07:29:43 IST" name="logoutUser" finished-at="2023-02-08T07:29:44 IST" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@32ee6fee]" started-at="2023-02-06T10:12:09 IST" name="tearDown" finished-at="2023-02-06T10:12:10 IST" duration-ms="649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- test.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

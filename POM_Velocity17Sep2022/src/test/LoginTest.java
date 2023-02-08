@@ -2,16 +2,13 @@ package test;
 
 import org.testng.annotations.Test;
 
-import mainjava.DashBoardPage;
-
-import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
 	@Test(priority = 0, groups= {"smoke","regression"})
-	public void verifyTitleOfLoginPage() {
+	public void verifyTitleOfLoginPage() {	
+		
 		String verifyTitleOfLoginPge = loginPage.titleOfLoginPage();
 		Assert.assertEquals(verifyTitleOfLoginPge, "Login");
 		this.verifyCurrentUrlOfPage();

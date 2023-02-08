@@ -19,8 +19,7 @@ public class DashBoardPage extends BaseTest {
 	WebElement clickLogoutDrpDown;
 	
 	@FindBy(xpath="//*[text()='Logout']")
-	WebElement clickLogoutText;
-	
+	WebElement txtLogout;
 	
 	// Initialization of locators/variables
 	public DashBoardPage(WebDriver driver) {
@@ -42,13 +41,13 @@ public class DashBoardPage extends BaseTest {
 	
 	/*
 	 * Author : Avdhut Pawar 
-	 * Date : 06 Feb 2023 
-	 * Description : This test method use to logout  
+	 * Date : 08 Feb 2023 
+	 * Description : This test method use to logout from build  
 	 */
-	public void clickOnLogout() {
+	public void logOut() {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.navigate().refresh();
 		clickLogoutDrpDown.click();
-		clickLogoutText.click();
+		txtLogout.click();
 	}
 }
